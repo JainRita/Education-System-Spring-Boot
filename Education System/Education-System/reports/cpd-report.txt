@@ -1,0 +1,813 @@
+Found a 43 line (118 tokens) duplication in the following files: 
+Starting at line 42 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\dto\StudentDTO.java
+Starting at line 106 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Student.java
+
+	}
+
+	public int getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	public String getContactNumber() {
+=====================================================================
+Found a 35 line (83 tokens) duplication in the following files: 
+Starting at line 98 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\controller\CourseController.java
+Starting at line 93 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\controller\TrainerController.java
+
+	public ErrorMessages exceptionHandler(final NotFoundException ex) {
+		return new ErrorMessages("404", ex.message);
+	}
+
+	/**
+	 * This is the Exception Handling method
+	 * 
+	 * @param e
+	 * @return Error Message
+	 */
+	@ResponseStatus(HttpStatus.NOT_FOUND)
+	@ExceptionHandler(ListEmptyException.class)
+	public ErrorMessages exceptionHandler(final ListEmptyException ex) {
+		return new ErrorMessages("404", ex.message);
+	}
+
+	/**
+	 * This is the Exception Handling method
+	 * 
+	 * @param e
+	 * @return Error Message
+	 */
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	@ExceptionHandler(AlreadyExistsException.class)
+	public ErrorMessages exceptionHandler(final AlreadyExistsException ex) {
+		return new ErrorMessages("400", ex.message);
+	}
+
+	/**
+	 * This is the Exception Handling method
+	 * 
+	 * @param e
+	 * @return Error Message
+	 */
+	@ResponseStatus(HttpStatus.NOT_FOUND)
+=====================================================================
+Found a 27 line (72 tokens) duplication in the following files: 
+Starting at line 50 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\dto\StudentDTO.java
+Starting at line 68 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Registration.java
+Starting at line 114 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Student.java
+
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getEmailId() {
+=====================================================================
+Found a 27 line (71 tokens) duplication in the following files: 
+Starting at line 50 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\dto\StudentDTO.java
+Starting at line 68 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Registration.java
+Starting at line 114 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Student.java
+Starting at line 59 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Trainer.java
+
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getMiddleName() {
+		return middleName;
+	}
+
+	public void setMiddleName(String middleName) {
+		this.middleName = middleName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getEmailId() {
+=====================================================================
+Found a 6 line (69 tokens) duplication in the following files: 
+Starting at line 36 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\IQuestionService.java
+Starting at line 87 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\IQuestionService.java
+
+	public Question addQuestion(final Question question) throws EmptyInputException {
+		LOGGER.info("Inside Service Layer for Adding Questions...START");
+		if (question.getQuestion() != null && question.getOption1() != null && question.getOption2() != null
+				&& question.getOption3() != null && question.getOption4() != null
+				&& question.getCorrectAnswer() != null) {
+			LOGGER.info("Question Added Sucessfully...END");
+=====================================================================
+Found a 13 line (65 tokens) duplication in the following files: 
+Starting at line 196 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 227 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+		Student student2 = new Student();
+		
+		student2.setStudentId(1);
+		student2.setFirstName("Aniket");
+		student2.setMiddleName("keshav");
+		student2.setLastName("karmakar");
+		student2.setEmailId("aniket@gmail.com");
+		student2.setContactNumber("8983612955");
+		student2.setPassword("Aniket$123");
+		student2.setConfirmPassword("Aniket$123");
+		student2.setValidate(true);
+
+		when(studentRepository.getOne(anyInt())).thenReturn(student2);
+=====================================================================
+Found a 12 line (62 tokens) duplication in the following files: 
+Starting at line 158 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 250 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+	{
+		Student student = new Student();
+		
+		student.setStudentId(1);
+		student.setFirstName("Aniket");
+		student.setMiddleName("keshav");
+		student.setLastName("karmakar");
+		student.setEmailId("aniket@gmail.com");
+		student.setContactNumber("8983612955");
+		student.setPassword("Aniket$123");
+		student.setConfirmPassword("Aniket$123");
+		student.setValidate(true);
+=====================================================================
+Found a 13 line (62 tokens) duplication in the following files: 
+Starting at line 169 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 225 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+		student.setValidate(true);
+
+		Student student2 = new Student();
+		
+		student2.setStudentId(1);
+		student2.setFirstName("Aniket");
+		student2.setMiddleName("keshav");
+		student2.setLastName("karmakar");
+		student2.setEmailId("aniket@gmail.com");
+		student2.setContactNumber("8983612955");
+		student2.setPassword("Aniket$123");
+		student2.setConfirmPassword("Aniket$123");
+		student2.setValidate(true);
+=====================================================================
+Found a 11 line (61 tokens) duplication in the following files: 
+Starting at line 171 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 196 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+		Student student2 = new Student();
+		
+		student2.setStudentId(1);
+		student2.setFirstName("Aniket");
+		student2.setMiddleName("keshav");
+		student2.setLastName("karmakar");
+		student2.setEmailId("aniket@gmail.com");
+		student2.setContactNumber("8983612955");
+		student2.setPassword("Aniket$123");
+		student2.setConfirmPassword("Aniket$123");
+		student2.setValidate(true);
+=====================================================================
+Found a 12 line (58 tokens) duplication in the following files: 
+Starting at line 40 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+Starting at line 67 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+
+	public void testRequestRegistration()
+	{
+		Student student = new Student();
+
+		student.setFirstName("Aniketk");
+		student.setMiddleName("keshavk");
+		student.setLastName("karmakark");
+		student.setEmailId("aniketk@gmail.com");
+		student.setUserName("Aniket");
+		student.setContactNumber("8983612958");
+		student.setPassword("Aniket$123");
+		student.setConfirmPassword("Aniket$123");
+=====================================================================
+Found a 11 line (58 tokens) duplication in the following files: 
+Starting at line 76 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 157 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+	void testGetAllStudentsRegistrationRequest()
+	{
+		Student student = new Student();
+		student.setStudentId(1);
+		student.setFirstName("Aniket");
+		student.setMiddleName("keshav");
+		student.setLastName("karmakar");
+		student.setEmailId("aniket@gmail.com");
+		student.setContactNumber("8983612955");
+		student.setPassword("Aniket$123");
+		student.setConfirmPassword("Aniket$123");
+=====================================================================
+Found a 10 line (56 tokens) duplication in the following files: 
+Starting at line 77 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 250 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+	{
+		Student student = new Student();
+		student.setStudentId(1);
+		student.setFirstName("Aniket");
+		student.setMiddleName("keshav");
+		student.setLastName("karmakar");
+		student.setEmailId("aniket@gmail.com");
+		student.setContactNumber("8983612955");
+		student.setPassword("Aniket$123");
+		student.setConfirmPassword("Aniket$123");
+=====================================================================
+Found a 15 line (53 tokens) duplication in the following files: 
+Starting at line 65 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 80 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 94 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 108 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+
+	public ResponseEntity<ErrorMessage> handleEmailAlreadyExistsException(final EmailAlreadyExistsException exception){
+		final ErrorMessage errorMessage = new ErrorMessage();
+		errorMessage.setErrorCode(HttpStatus.BAD_REQUEST.value());
+		errorMessage.setMessage(exception.getMessage());
+		return new ResponseEntity<ErrorMessage>(errorMessage, HttpStatus.OK);
+	}
+	
+	/**
+	 * 
+	 * @param Object of EmailAlreadyExistsException
+	 * @return ResponseEntity of ErrorMessage object
+	 */
+	
+	
+	@ExceptionHandler(value = {UserNameExistException.class})
+=====================================================================
+Found a 13 line (49 tokens) duplication in the following files: 
+Starting at line 45 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorMessageDetails.java
+Starting at line 25 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorMessages.java
+
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(final String status) {
+		this.status = status;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(final String message) {
+		this.message = message;
+	}
+=====================================================================
+Found a 10 line (49 tokens) duplication in the following files: 
+Starting at line 42 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+Starting at line 69 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+Starting at line 59 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+		Student student = new Student();
+
+		student.setFirstName("Aniketk");
+		student.setMiddleName("keshavk");
+		student.setLastName("karmakark");
+		student.setEmailId("aniketk@gmail.com");
+		student.setUserName("Aniket");
+		student.setContactNumber("8983612958");
+		student.setPassword("Aniket$123");
+		student.setConfirmPassword("Aniket$123");
+=====================================================================
+Found a 8 line (46 tokens) duplication in the following files: 
+Starting at line 25 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\PaymentRepositoryTest.java
+Starting at line 33 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\PaymentServiceTest.java
+
+	public Payment getPayment() {
+		Payment pay = new Payment();
+		pay.setCardNumber(2345);
+		pay.setCardType("debit");
+		pay.setBankName("HDFC");
+		pay.setAmount(30000);
+		pay.setDescription("good");
+		pay.setPaymentDate("29/07/2020");
+=====================================================================
+Found a 8 line (46 tokens) duplication in the following files: 
+Starting at line 32 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\QuestionRepositoryTests.java
+Starting at line 48 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\QuestionServiceTests.java
+
+	public Question getQuestion() {
+		Question question = new Question();
+		question.setQuestion("Which of these is long data type literal");
+		question.setOption1("0x99fffL");
+		question.setOption2("ABCDEFG");
+		question.setOption3("0x99fffa");
+		question.setOption4("99671246");
+		question.setCorrectAnswer("0x99fffL");
+=====================================================================
+Found a 9 line (46 tokens) duplication in the following files: 
+Starting at line 77 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 110 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 158 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 250 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+	{
+		Student student = new Student();
+		student.setStudentId(1);
+		student.setFirstName("Aniket");
+		student.setMiddleName("keshav");
+		student.setLastName("karmakar");
+		student.setEmailId("aniket@gmail.com");
+		student.setContactNumber("8983612955");
+		student.setPassword("Aniket$123");
+=====================================================================
+Found a 5 line (44 tokens) duplication in the following files: 
+Starting at line 65 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 80 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 94 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 108 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 159 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+
+	public ResponseEntity<ErrorMessage> handleEmailAlreadyExistsException(final EmailAlreadyExistsException exception){
+		final ErrorMessage errorMessage = new ErrorMessage();
+		errorMessage.setErrorCode(HttpStatus.BAD_REQUEST.value());
+		errorMessage.setMessage(exception.getMessage());
+		return new ResponseEntity<ErrorMessage>(errorMessage, HttpStatus.OK);
+=====================================================================
+Found a 8 line (44 tokens) duplication in the following files: 
+Starting at line 32 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\QuestionRepositoryTests.java
+Starting at line 35 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\QuestionServiceTests.java
+Starting at line 48 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\QuestionServiceTests.java
+
+	public Question getQuestion() {
+		Question question = new Question();
+		question.setQuestion("Which of these is long data type literal");
+		question.setOption1("0x99fffL");
+		question.setOption2("ABCDEFG");
+		question.setOption3("0x99fffa");
+		question.setOption4("99671246");
+		question.setCorrectAnswer("0x99fffL");
+=====================================================================
+Found a 7 line (41 tokens) duplication in the following files: 
+Starting at line 57 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\QuestionServiceTests.java
+Starting at line 75 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\QuestionServiceTests.java
+
+		Question question0 = new Question();
+		question.setQuestion("Which of these can be returned by the operator &?");
+		question.setOption1("Integer");
+		question.setOption2("Boolean");
+		question.setOption3("Character");
+		question.setOption4("Integer or Boolean");
+		question.setCorrectAnswer("Integer or Boolean");
+=====================================================================
+Found a 12 line (38 tokens) duplication in the following files: 
+Starting at line 275 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\StudentServiceImpl.java
+Starting at line 314 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\StudentServiceImpl.java
+
+		LOGGER.info("Inside the updateStudentDetails method of the service layer - START");
+		final Student student = studentRepository.getOne(id);
+		
+		if (!(student.isValidate()))
+		{
+			LOGGER.warn("This student details can't be shown because it is not validated yet!!");
+			throw new RegistrationRequestNotApprovedException(
+					"This student details can't be shown because it is not validated yet!!");
+			
+		}
+		else
+		{
+=====================================================================
+Found a 7 line (37 tokens) duplication in the following files: 
+Starting at line 40 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\CourseRepoTest.java
+Starting at line 55 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\CourseRepoTest.java
+
+	public void testGetCourse() {
+		Course course=new Course();
+		course.setCourseId(8);
+		course.setCourseName("Spring");
+		course.setHours(11);
+		
+		Course c=courseRepository.save(course);
+=====================================================================
+Found a 6 line (37 tokens) duplication in the following files: 
+Starting at line 62 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\FeedbackRepositoryTest.java
+Starting at line 56 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\GrievanceRepositoryTest.java
+
+		assertNotNull(feedbackRepository.getOne(expected.getId()));
+		assertThat(actual.getId()).isEqualTo(expected.getId());
+	}	
+	@Test
+	@Order(3)
+	public void testViewAllFeedback()
+=====================================================================
+Found a 13 line (33 tokens) duplication in the following files: 
+Starting at line 45 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\controller\QuestionController.java
+Starting at line 58 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\controller\TestController.java
+
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	@ExceptionHandler(EmptyInputException.class)
+	public ErrorResponse handlingEmptyException(final EmptyInputException ex) {
+		return new ErrorResponse("Input provided are empty!", "400");
+	}
+	
+	
+	/***
+	 * Implementing QuestionException
+	 * @param e
+	 * @return Error Response
+	 */
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+=====================================================================
+Found a 13 line (33 tokens) duplication in the following files: 
+Starting at line 44 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Feedback.java
+Starting at line 30 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Grievance.java
+
+			public int getId() {
+					return id;
+			}
+			
+			public String getSname() {
+					return sname;
+			}
+			
+			public void setSname(String sname) {
+				this.sname = sname;
+			}
+			
+			public String getFeedback() {
+=====================================================================
+Found a 12 line (33 tokens) duplication in the following files: 
+Starting at line 61 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Feedback.java
+Starting at line 56 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Grievance.java
+
+			}
+			
+			public String getReply() {
+					return reply;
+			}
+			public void setReply(String reply) {
+					this.reply = reply;
+			}
+
+			@Override
+			public String toString() {
+					return "Feedback [id=" + id + ",  sname=" + sname + ", feedback="
+=====================================================================
+Found a 8 line (32 tokens) duplication in the following files: 
+Starting at line 34 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\dto\StudentDTO.java
+Starting at line 92 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Student.java
+
+			String contactNumber) {
+		super();
+		this.studentId = studentId;
+		this.firstName = firstName;
+		this.middleName = middleName;
+		this.lastName = lastName;
+		this.emailId = emailId;
+		this.contactNumber = contactNumber;
+=====================================================================
+Found a 3 line (32 tokens) duplication in the following files: 
+Starting at line 204 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 218 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+
+		ErrorMessageDetails exceptionHandler(final InvalidMessageException exception, final  WebRequest request) {
+			return new ErrorMessageDetails(new Date(), "404", exception.getMessage(), request.getDescription(false));
+		}
+=====================================================================
+Found a 9 line (32 tokens) duplication in the following files: 
+Starting at line 50 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorMessageDetails.java
+Starting at line 31 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorResponse.java
+
+		this.status = status;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(final String message) {
+		this.message = message;
+	}
+	public String getRequest() {
+=====================================================================
+Found a 6 line (32 tokens) duplication in the following files: 
+Starting at line 97 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\ITestService.java
+Starting at line 122 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\ITestService.java
+
+		 Test test = testRepo.findById(tid).orElse(null);
+		if (test == null) {
+			LOGGER.error("TestException occured...END");
+			throw new TestException("Test cannot be found!");
+		} else {
+			LOGGER.info("Updating Test By Adding Question...END");
+=====================================================================
+Found a 7 line (32 tokens) duplication in the following files: 
+Starting at line 51 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\FeedbackRepositoryTest.java
+Starting at line 45 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\GrievanceRepositoryTest.java
+
+	  Feedback expected=feedbackRepository.getOne(actual.getId());
+	  assertNotNull(actual); 
+	  assertThat(actual).isEqualTo(expected); } //
+	 		
+	@Test
+	@Order(2)
+	public void testViewMessage()
+=====================================================================
+Found a 8 line (30 tokens) duplication in the following files: 
+Starting at line 24 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorMessages.java
+Starting at line 43 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorResponse.java
+
+		this.message = message;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(final String status) {
+		this.status = status;
+	}
+=====================================================================
+Found a 8 line (30 tokens) duplication in the following files: 
+Starting at line 30 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorMessages.java
+Starting at line 31 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorResponse.java
+
+		this.status = status;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(final String message) {
+		this.message = message;
+	}
+=====================================================================
+Found a 6 line (30 tokens) duplication in the following files: 
+Starting at line 112 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\CourseServiceTest.java
+Starting at line 133 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\CourseServiceTest.java
+
+	public void testUpdateCourseForPayment() throws  NotFoundException {
+        Course course=new Course();
+		
+        course.setCourseId(1);
+		course.setCourseName("DBMS");
+		course.setHours(5);
+=====================================================================
+Found a 4 line (29 tokens) duplication in the following files: 
+Starting at line 289 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\StudentServiceImpl.java
+Starting at line 141 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+
+			student.setLastName(studentDTO.getLastName());
+			student.setEmailId(studentDTO.getEmailId());
+			student.setContactNumber(studentDTO.getContactNumber());
+			student.setConfirmPassword(student.getPassword());
+=====================================================================
+Found a 6 line (29 tokens) duplication in the following files: 
+Starting at line 117 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 143 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+		student.setEmailId("aniket@gmail.com");
+		student.setContactNumber("8983612955");
+		student.setUserName("aniket");
+		student.setPassword("Aniket$123");
+		student.setConfirmPassword("Aniket$123");
+		student.setValidate(false);
+=====================================================================
+Found a 4 line (28 tokens) duplication in the following files: 
+Starting at line 50 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 65 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 80 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 94 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 108 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 159 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+
+			  final HttpHeaders headers, final HttpStatus status, final WebRequest request) {
+	    final ErrorMessage errorMessage = new ErrorMessage();
+	    errorMessage.setErrorCode(HttpStatus.BAD_REQUEST.value());
+		errorMessage.setMessage(exception.getBindingResult().getAllErrors().get(0).getDefaultMessage());
+=====================================================================
+Found a 4 line (28 tokens) duplication in the following files: 
+Starting at line 385 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\StudentServiceImpl.java
+Starting at line 169 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+
+						courseList.add(course);
+						student.setConfirmPassword(student.getPassword());
+						student.setCourses(courseList);
+						studentRepository.save(student);
+=====================================================================
+Found a 5 line (28 tokens) duplication in the following files: 
+Starting at line 40 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\CourseRepoTest.java
+Starting at line 55 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\CourseRepoTest.java
+Starting at line 69 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\CourseRepoTest.java
+
+	public void testGetCourse() {
+		Course course=new Course();
+		course.setCourseId(8);
+		course.setCourseName("Spring");
+		course.setHours(11);
+=====================================================================
+Found a 4 line (28 tokens) duplication in the following files: 
+Starting at line 41 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\TrainerRepoTest.java
+Starting at line 55 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\TrainerRepoTest.java
+
+	public void testGetTrainer() {
+		Trainer trainer=new Trainer(1,"Tom","Derek","Frank",null);
+		
+		Trainer t=trainerRepository.save(trainer);
+=====================================================================
+Found a 7 line (27 tokens) duplication in the following files: 
+Starting at line 177 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 205 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+
+			return new ErrorMessageDetails(new Date(), "400", exception.getMessage(), request.getDescription(false));
+		}
+
+		// database exception handler for object not found
+		@ResponseBody
+		@ResponseStatus(HttpStatus.NOT_FOUND)
+		@ExceptionHandler(InvalidAdminException.class)
+=====================================================================
+Found a 8 line (27 tokens) duplication in the following files: 
+Starting at line 26 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorDetails.java
+Starting at line 51 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorMessageDetails.java
+Starting at line 32 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorResponse.java
+
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(final String message) {
+		this.message = message;
+	}
+	public String getDetails() {
+=====================================================================
+Found a 9 line (27 tokens) duplication in the following files: 
+Starting at line 278 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\StudentServiceImpl.java
+Starting at line 317 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\StudentServiceImpl.java
+Starting at line 359 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\StudentServiceImpl.java
+
+		if (!(student.isValidate()))
+		{
+			LOGGER.warn("This student details can't be shown because it is not validated yet!!");
+			throw new RegistrationRequestNotApprovedException(
+					"This student details can't be shown because it is not validated yet!!");
+			
+		}
+		else
+		{
+=====================================================================
+Found a 6 line (27 tokens) duplication in the following files: 
+Starting at line 25 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\AdminRepositoryTest.java
+Starting at line 30 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\AdminServiceTest.java
+
+	@Test
+	public void testAdminLogin()	//test for admin login
+	{
+		Admin admin=new Admin();
+		admin.setUserName("admin123");
+		admin.setPassword("admin123");
+=====================================================================
+Found a 5 line (27 tokens) duplication in the following files: 
+Starting at line 25 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\FeedbackRepositoryTest.java
+Starting at line 22 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\GrievanceRepositoryTest.java
+
+@RunWith(SpringRunner.class)
+@AutoConfigureTestDatabase(replace= Replace.NONE)
+@DataJpaTest
+@TestMethodOrder(OrderAnnotation.class)
+public class FeedbackRepositoryTest {
+=====================================================================
+Found a 7 line (27 tokens) duplication in the following files: 
+Starting at line 42 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+Starting at line 69 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+Starting at line 59 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+Starting at line 289 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\StudentServiceTest.java
+
+		Student student = new Student();
+
+		student.setFirstName("Aniketk");
+		student.setMiddleName("keshavk");
+		student.setLastName("karmakark");
+		student.setEmailId("aniketk@gmail.com");
+		student.setUserName("Aniket");
+=====================================================================
+Found a 11 line (26 tokens) duplication in the following files: 
+Starting at line 50 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Admin.java
+Starting at line 146 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\entities\Student.java
+
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+=====================================================================
+Found a 3 line (26 tokens) duplication in the following files: 
+Starting at line 67 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 82 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 96 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 110 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 135 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 148 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+Starting at line 161 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\EducationSystemExceptionsHandler.java
+
+		errorMessage.setErrorCode(HttpStatus.BAD_REQUEST.value());
+		errorMessage.setMessage(exception.getMessage());
+		return new ResponseEntity<ErrorMessage>(errorMessage, HttpStatus.OK);
+=====================================================================
+Found a 15 line (26 tokens) duplication in the following files: 
+Starting at line 37 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorMessage.java
+Starting at line 31 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\exceptions\ErrorMessages.java
+
+	}
+
+	public String getMessage() {
+		return message;
+	}
+	/**
+	 * 
+	 * @param errorMessage
+	 */
+
+	public void setMessage(final String message) {
+		this.message = message;
+	}
+
+}
+=====================================================================
+Found a 3 line (26 tokens) duplication in the following files: 
+Starting at line 287 of E:\Amit\Education-System\Education System\Education-System\src\main\java\com\training\educationsystem\services\StudentServiceImpl.java
+Starting at line 139 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\repositories\StudentRepositoryTest.java
+
+			student.setFirstName(studentDTO.getFirstName());
+			student.setMiddleName(studentDTO.getMiddleName());
+			student.setLastName(studentDTO.getLastName());
+=====================================================================
+Found a 5 line (26 tokens) duplication in the following files: 
+Starting at line 99 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\CourseServiceTest.java
+Starting at line 112 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\CourseServiceTest.java
+Starting at line 133 of E:\Amit\Education-System\Education System\Education-System\src\test\java\com\training\educationsystem\service\CourseServiceTest.java
+
+	public void testDeleteCourse() {
+		Course course=new Course();
+		course.setCourseId(1);
+		course.setCourseName("DBMS");
+		course.setHours(5);

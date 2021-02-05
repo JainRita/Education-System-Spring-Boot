@@ -1,0 +1,52 @@
+2020-12-30 20:03:20.411  INFO 672 --- [main] c.t.e.EducationSystemApplication         : Starting EducationSystemApplication using Java 15 on DESKTOP-RI2NT3R with PID 672 (C:\Users\Dell\Desktop\Education-System\Education System\Education-System\target\classes started by Dell in C:\Users\Dell\Desktop\Education-System\Education System\Education-System)
+2020-12-30 20:03:20.413  INFO 672 --- [main] c.t.e.EducationSystemApplication         : No active profile set, falling back to default profiles: default
+2020-12-30 20:03:21.086  INFO 672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-30 20:03:21.155  INFO 672 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+2020-12-30 20:03:21.795  INFO 672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-30 20:03:21.805  INFO 672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-30 20:03:21.805  INFO 672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-30 20:03:21.913  INFO 672 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-30 20:03:21.913  INFO 672 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1449 ms
+2020-12-30 20:03:22.131  INFO 672 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-30 20:03:22.180  INFO 672 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-30 20:03:22.320  INFO 672 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-30 20:03:22.425  INFO 672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-30 20:03:22.736  INFO 672 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-30 20:03:22.756  INFO 672 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-12-30 20:03:24.202  INFO 672 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-30 20:03:24.210  INFO 672 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 20:03:24.806  WARN 672 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-30 20:03:24.919  INFO 672 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-30 20:03:25.173  INFO 672 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-30 20:03:25.183  INFO 672 --- [main] c.t.e.EducationSystemApplication         : Started EducationSystemApplication in 5.188 seconds (JVM running for 5.905)
+2020-12-30 20:05:31.408  INFO 672 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-30 20:05:31.429  INFO 672 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-30 20:05:31.431  INFO 672 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 20:05:31.434  INFO 672 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-30 20:05:31.439  INFO 672 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-30 20:05:35.292  INFO 1224 --- [main] c.t.e.EducationSystemApplication         : Starting EducationSystemApplication using Java 15 on DESKTOP-RI2NT3R with PID 1224 (C:\Users\Dell\Desktop\Education-System\Education System\Education-System\target\classes started by Dell in C:\Users\Dell\Desktop\Education-System\Education System\Education-System)
+2020-12-30 20:05:35.294  INFO 1224 --- [main] c.t.e.EducationSystemApplication         : No active profile set, falling back to default profiles: default
+2020-12-30 20:05:36.127  INFO 1224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-12-30 20:05:36.206  INFO 1224 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 6 JPA repository interfaces.
+2020-12-30 20:05:36.708  INFO 1224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-12-30 20:05:36.718  INFO 1224 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-30 20:05:36.718  INFO 1224 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-30 20:05:36.815  INFO 1224 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-30 20:05:36.815  INFO 1224 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1455 ms
+2020-12-30 20:05:37.020  INFO 1224 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-30 20:05:37.068  INFO 1224 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2020-12-30 20:05:37.207  INFO 1224 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2020-12-30 20:05:37.353  INFO 1224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-30 20:05:37.527  INFO 1224 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-30 20:05:37.545  INFO 1224 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2020-12-30 20:05:39.053  INFO 1224 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-30 20:05:39.066  INFO 1224 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 20:05:39.695  WARN 1224 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-30 20:05:39.803  INFO 1224 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-30 20:05:40.038  INFO 1224 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-30 20:05:40.049  INFO 1224 --- [main] c.t.e.EducationSystemApplication         : Started EducationSystemApplication in 5.397 seconds (JVM running for 6.187)
+2020-12-30 20:06:53.944  INFO 1224 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-12-30 20:06:53.965  INFO 1224 --- [RMI TCP Connection(5)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-30 20:06:53.967  INFO 1224 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 20:06:53.970  INFO 1224 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-30 20:06:53.977  INFO 1224 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
